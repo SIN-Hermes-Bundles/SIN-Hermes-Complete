@@ -15,7 +15,7 @@ curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Compl
 | Repo | Zweck | Install |
 |------|-------|---------|
 | [SIN-Hermes-Provider-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle) | Pool-Router + 412-Retry + UA-Spoof + Config | **Im Complete-Installer enthalten** |
-| [SIN-Hermes-Browser-Skills-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Browser-Skills-Bundle) | 22+ Hermes Skills fuer Surveys | **Im Complete-Installer enthalten** |
+| [SIN-Hermes-Browser-Skills-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Browser-Skills-Bundle) | 23+ Hermes Skills fuer Surveys | **Im Complete-Installer enthalten** |
 
 ## Pool-Router
 
@@ -45,7 +45,7 @@ curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Brows
 3. **412 Retry Patch** — `error_classifier.py`
 4. **UA-Spoof Patch** — `_ua_patch.py`
 5. **Unlimited max_turns** — `999999`
-6. **22+ Hermes Skills** — nach `~/.hermes/skills/survey/`
+6. **23+ Hermes Skills** — nach `~/.hermes/skills/survey/`
 
 ## Auth
 
