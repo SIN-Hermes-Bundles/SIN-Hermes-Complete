@@ -32,7 +32,7 @@ curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Brows
 1. Fireworks Provider Config (`~/.hermes/config.yaml`)
 2. 412 PRECONDITION_FAILED Retry Patch (`error_classifier.py`)
 3. `max_turns=999999` (kein Iterations-Limit)
-4. 13+ Hermes Skills nach `~/.hermes/skills/survey/`
+4. 22+ Hermes Skills nach `~/.hermes/skills/survey/`
 
 ## Auth
 
