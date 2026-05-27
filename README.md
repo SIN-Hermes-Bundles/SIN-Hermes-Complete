@@ -14,28 +14,24 @@ curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Compl
 
 | Repo | Zweck | Install |
 |------|-------|---------|
-| [SIN-Hermes-Provider-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle) | Fireworks Config + 412-Retry-Patch + max_turns | **Im Complete-Installer enthalten** |
+| [SIN-Hermes-Provider-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle) | Pool-Router + 412-Retry + UA-Spoof + Config | **Im Complete-Installer enthalten** |
 | [SIN-Hermes-Browser-Skills-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Browser-Skills-Bundle) | 22+ Hermes Skills fuer Surveys | **Im Complete-Installer enthalten** |
 
-## Pool-Auswahl (Provider)
+## Pool-Router
 
-Jeder Mac bekommt seinen eigenen dedizierten Proxy:
+Der Provider-Bundle installiert einen lokalen Router auf `localhost:9998`
+mit Auto-Failover zwischen `sinatorpool1/2/3`. Kein manueller Pool-Wechsel mehr.
 
-| Pool | Mac | Installer |
-|------|-----|-----------|
-| **Pool 1** | Mac 1 | `install-pool1.sh` |
-| **Pool 2** | Mac 2 | `install-pool2.sh` |
-| **Pool 3** | Mac 3 | `install-pool3.sh` |
-
-```bash
-# Beispiel: Nur Pool 2 auf Mac 2
-curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle/main/install-pool2.sh | bash
-```
+| Pool | Base URL | Prioritaet |
+|------|----------|------------|
+| **Pool 1** | `https://sinatorpool1.delqhi.com` | 1 (bevorzugt) |
+| **Pool 2** | `https://sinatorpool2.delqhi.com` | 2 (Fallback) |
+| **Pool 3** | `https://sinatorpool3.delqhi.com` | 3 (letzter Fallback) |
 
 ## Einzeln installieren
 
 ```bash
-# Nur Provider
+# Nur Provider (Router + Patches + Config)
 curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle/main/install.sh | bash
 
 # Nur Skills
@@ -44,10 +40,12 @@ curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Brows
 
 ## Was der Installer macht
 
-1. Fireworks Provider Config (`~/.hermes/config.yaml`)
-2. 412 PRECONDITION_FAILED Retry Patch (`error_classifier.py`)
-3. `max_turns=999999` (kein Iterations-Limit)
-4. 22+ Hermes Skills nach `~/.hermes/skills/survey/`
+1. **Pool Router** — `pool-router.py` auf `localhost:9998` mit Auto-Failover
+2. **Fireworks Config** — `~/.hermes/config.yaml` mit Router-URL
+3. **412 Retry Patch** — `error_classifier.py`
+4. **UA-Spoof Patch** — `_ua_patch.py`
+5. **Unlimited max_turns** — `999999`
+6. **22+ Hermes Skills** — nach `~/.hermes/skills/survey/`
 
 ## Auth
 
@@ -63,6 +61,6 @@ Siehe [SIN-Hermes-Browser-Skills-Bundle/docs/survey-run.md](https://github.com/S
 
 | Bundle | Status | Beschreibung |
 |--------|--------|--------------|
-| SIN-Hermes-Patches | **Geplant** | Core Hermes Patches (UA-Spoofing, run_agent.py Mods) |
+| SIN-Hermes-Patches | **Geplant** | Core Hermes Patches (run_agent.py Mods) |
 | SIN-Hermes-Survey-CLI | **Geplant** | Standalone survey-cli (ex stealth-runner) |
 | SIN-Hermes-Personas | **Geplant** | Persona-Datenbank + Lessons-Learned DB |
