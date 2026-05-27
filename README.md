@@ -15,7 +15,22 @@ curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Compl
 | Repo | Zweck | Install |
 |------|-------|---------|
 | [SIN-Hermes-Provider-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle) | Fireworks Config + 412-Retry-Patch + max_turns | **Im Complete-Installer enthalten** |
-| [SIN-Hermes-Browser-Skills-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Browser-Skills-Bundle) | 13+ Hermes Skills fuer Surveys | **Im Complete-Installer enthalten** |
+| [SIN-Hermes-Browser-Skills-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Browser-Skills-Bundle) | 22+ Hermes Skills fuer Surveys | **Im Complete-Installer enthalten** |
+
+## Pool-Auswahl (Provider)
+
+Jeder Mac bekommt seinen eigenen dedizierten Proxy:
+
+| Pool | Mac | Installer |
+|------|-----|-----------|
+| **Pool 1** | Mac 1 | `install-pool1.sh` |
+| **Pool 2** | Mac 2 | `install-pool2.sh` |
+| **Pool 3** | Mac 3 | `install-pool3.sh` |
+
+```bash
+# Beispiel: Nur Pool 2 auf Mac 2
+curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle/main/install-pool2.sh | bash
+```
 
 ## Einzeln installieren
 
