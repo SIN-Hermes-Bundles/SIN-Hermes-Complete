@@ -17,6 +17,7 @@ curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Compl
 | [SIN-Hermes-Provider-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle) | Pool-Router + 412-Retry + UA-Spoof + Config | **Im Complete-Installer enthalten** |
 | [SIN-Hermes-Browser-Skills-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Browser-Skills-Bundle) | 22+ Hermes Skills fuer Surveys | **Im Complete-Installer enthalten** |
 | [SIN-Hermes-Google-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Google-Bundle) | Google Workspace OAuth (Gmail/Drive/Calendar) | **Optional** — siehe unten |
+| [SIN-Hermes-WhatsApp-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-WhatsApp-Bundle) | WhatsApp Gateway (Bot-Modus, QR-Scan) | **Optional** — siehe unten |
 
 ## Google Workspace (Optional)
 
@@ -34,6 +35,22 @@ Danach sofort verfuegbar:
 - `google_api.py drive upload file.pdf` — Drive
 
 Details: [SIN-Hermes-Google-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Google-Bundle)
+
+## WhatsApp Gateway (Optional)
+
+Fuer WhatsApp-Bot auf separatem Nummer (empfohlen: Zweitnummer):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-WhatsApp-Bundle/main/install.sh | bash
+```
+
+Was passiert:
+- Node.js Version check (>= 18.14 nötig)
+- PATH fix für Homebrew Node
+- QR-Code Pairing
+- Gateway restart
+
+Details: [SIN-Hermes-WhatsApp-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-WhatsApp-Bundle)
 
 ## Pool-Router
 
@@ -127,6 +144,7 @@ SIN-Hermes-Bundles (Org)
 │   └── sin-hermes-provider-setup Skill
 ├── SIN-Hermes-Browser-Skills-Bundle
 │   └── 22+ Survey Skills (Browser-native)
-└── SIN-Hermes-Google-Bundle
-    └── Google OAuth (Gmail/Drive/Calendar/Sheets/Docs)
-```
+├── SIN-Hermes-Google-Bundle
+│   └── Google OAuth (Gmail/Drive/Calendar/Sheets/Docs)
+└── SIN-Hermes-WhatsApp-Bundle
+    └── WhatsApp Gateway (Bot-Modus, QR-Scan, Node.js >= 18.14)
