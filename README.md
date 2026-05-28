@@ -15,6 +15,7 @@ curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Compl
 | Repo | Zweck | Install |
 |------|-------|---------|
 | [SIN-Hermes-Provider-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle) | Pool-Router + 412-Retry + UA-Spoof + Config | **Im Complete-Installer enthalten** |
+| [SIN-Hermes-V15-Patches](https://github.com/SIN-Rotator/SIN-Hermes-V15-Patches) | Progressive Tool Loading + 413 Compression Fix | **Im Complete-Installer enthalten** |
 | [SIN-Hermes-Browser-Skills-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Browser-Skills-Bundle) | 22+ Hermes Skills fuer Surveys | **Im Complete-Installer enthalten** |
 | [SIN-Hermes-Google-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Google-Bundle) | Google Workspace OAuth (Gmail/Drive/Calendar) | **Optional** — siehe unten |
 | [SIN-Hermes-WhatsApp-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-WhatsApp-Bundle) | WhatsApp Gateway (Bot-Modus, QR-Scan) | **Optional** — siehe unten |
@@ -85,8 +86,9 @@ curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Brows
 3. **412 Retry Patch** — `error_classifier.py`: 412 + "suspended" -> `billing` + retryable
 4. **UA-Spoof Patch** — `_ua_patch.py`: Chrome Mac User-Agent + `max_retries=0` (Router uebernimmt Retry)
 5. **Unlimited max_turns** — `999999`
-6. **22+ Hermes Skills** — nach `~/.hermes/skills/survey/`
-7. **Provider-Setup-Skill** — `sin-hermes-provider-setup` im Provider-Bundle fuer neue Macs
+6. **V15 Progressive Tool Loading** — Reduziert initiale Tool-Schema-Last von ~26 auf ~10 Tools, laedt restliche on-demand via `tool_search` + 413 Compression Fix
+7. **22+ Hermes Skills** — nach `~/.hermes/skills/survey/`
+8. **Provider-Setup-Skill** — `sin-hermes-provider-setup` im Provider-Bundle fuer neue Macs
 
 ## Auth
 
