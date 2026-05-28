@@ -16,6 +16,24 @@ curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Compl
 |------|-------|---------|
 | [SIN-Hermes-Provider-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle) | Pool-Router + 412-Retry + UA-Spoof + Config | **Im Complete-Installer enthalten** |
 | [SIN-Hermes-Browser-Skills-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Browser-Skills-Bundle) | 22+ Hermes Skills fuer Surveys | **Im Complete-Installer enthalten** |
+| [SIN-Hermes-Google-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Google-Bundle) | Google Workspace OAuth (Gmail/Drive/Calendar) | **Optional** — siehe unten |
+
+## Google Workspace (Optional)
+
+Fuer Gmail lesen/sendend, Drive, Calendar, Sheets, Docs:
+
+```bash
+# Google OAuth einrichten (einmalig, dauert 2 Minuten)
+curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Google-Bundle/main/install.sh | bash
+```
+
+Danach sofort verfuegbar:
+- `gmail-quick.sh unread 5` — Ungelesene E-Mails
+- `gmail-quick.sh send "to@example.com" "Subject" "Body"` — E-Mail senden
+- `google_api.py calendar list` — Kalender
+- `google_api.py drive upload file.pdf` — Drive
+
+Details: [SIN-Hermes-Google-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Google-Bundle)
 
 ## Pool-Router
 
@@ -107,6 +125,8 @@ SIN-Hermes-Bundles (Org)
 │   ├── 412-Patch
 │   ├── UA-Spoof (max_retries=0)
 │   └── sin-hermes-provider-setup Skill
-└── SIN-Hermes-Browser-Skills-Bundle
-    └── 22+ Survey Skills (Browser-native)
+├── SIN-Hermes-Browser-Skills-Bundle
+│   └── 22+ Survey Skills (Browser-native)
+└── SIN-Hermes-Google-Bundle
+    └── Google OAuth (Gmail/Drive/Calendar/Sheets/Docs)
 ```
