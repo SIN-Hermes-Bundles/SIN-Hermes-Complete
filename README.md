@@ -17,8 +17,13 @@ curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Compl
 | [SIN-Hermes-Provider-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle) | Pool-Router + 412-Retry + UA-Spoof + Config | **Im Complete-Installer enthalten** |
 | [SIN-Hermes-V15-Patches](https://github.com/SIN-Rotator/SIN-Hermes-V15-Patches) | Progressive Tool Loading + 413 Compression Fix | **Im Complete-Installer enthalten** |
 | [SIN-Hermes-Browser-Skills-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Browser-Skills-Bundle) | 22+ Hermes Skills fuer Surveys | **Im Complete-Installer enthalten** |
+| [SIN-Passwordmanager-Infisical-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Passwordmanager-Infisical-Bundle) | API-Keys + Secrets via Infisical (SSOT) | **Empfohlen** — Secret-Verwaltung |
+| [SIN-Hermes-Websearch-SerpAPI-Pool-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Websearch-SerpAPI-Pool-Bundle) | SerpAPI Key Pool (4 Keys, Round-Robin, 429-Fallback) | **Empfohlen** — Web Search |
 | [SIN-Hermes-Google-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Google-Bundle) | Google Workspace OAuth (Gmail/Drive/Calendar) | **Optional** — siehe unten |
 | [SIN-Hermes-WhatsApp-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-WhatsApp-Bundle) | WhatsApp Gateway (Bot-Modus, QR-Scan) | **Optional** — siehe unten |
+| [SIN-Hermes-TikTok-Affiliate-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-TikTok-Affiliate-Bundle) | TikTok Affiliate Automation (Browser-Agent) | **Optional** |
+| [SIN-Hermes-Replicate-Video-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Replicate-Video-Bundle) | AI Video Generator (Wan2.1, SVD, AnimateDiff) | **Optional** |
+| [SIN-TikTok-Intelligence-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-TikTok-Intelligence-Bundle) | TikTok Shop Intelligence (SimpTok + EchoTik) | **Optional** |
 
 ## Google Workspace (Optional)
 
