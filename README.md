@@ -1,6 +1,6 @@
 # SIN-Hermes-Complete
 
-[![graphify](https://img.shields.io/badge/graphify-knowledge%20graph-8A2BE2)](graphify-out/graph.json)
+[![GitNexus](https://img.shields.io/badge/GitNexus-knowledge%20graph-8B5CF6)](.gitnexus/)
 
 **One-Command Meta-Installer for all SIN-Hermes-Bundles.**
 
