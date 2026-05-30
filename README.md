@@ -1,5 +1,7 @@
 # SIN-Hermes-Complete
 
+[![graphify](https://img.shields.io/badge/graphify-knowledge%20graph-8A2BE2)](graphify-out/graph.json)
+
 **One-Command Meta-Installer for all SIN-Hermes-Bundles.**
 
 Installiert alles was du brauchst fuer vollautonome HeyPiggy-Umfragen mit Hermes Agent.
