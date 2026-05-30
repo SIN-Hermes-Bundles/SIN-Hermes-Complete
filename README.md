@@ -2,6 +2,8 @@
 
 [![GitNexus](https://img.shields.io/badge/GitNexus-knowledge%20graph-8B5CF6)](.gitnexus/)
 
+> **⚠️ GitNexus-Pflicht:** Bevor du Code in diesem Repo änderst, MUSST du `gitnexus_impact()` (Blast Radius) und `gitnexus_detect_changes()` (vor Commit) ausführen. Siehe [GitNexus Guide](.gitnexus/).
+
 **One-Command Meta-Installer for all SIN-Hermes-Bundles.**
 
 Installiert alles was du brauchst fuer vollautonome HeyPiggy-Umfragen mit Hermes Agent.
