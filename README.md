@@ -84,6 +84,13 @@ curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Provi
 curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Browser-Skills-Bundle/main/install.sh | bash
 ```
 
+## Config — Permission-Free Mode
+
+Standardmäßig fragt Hermes **vor jeder gefährlichen Aktion** nach Bestätigung.
+Für vollautonomen Betrieb (Fernsteuerung, Handy, Cron, Surveys) **abschalten:**
+
+➡️ **[CONFIGURATION.md](CONFIGURATION.md)** — `approvals.mode: auto` + `--yolo` Flag
+
 ## Was der Installer macht
 
 1. **Pool Router** — `pool-router.py` auf `localhost:9998` mit Auto-Failover
