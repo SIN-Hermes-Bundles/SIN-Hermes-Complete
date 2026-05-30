@@ -60,7 +60,7 @@ echo "  TikTok Aff: curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bund
 echo "  Video Gen:  curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Replicate-Video-Bundle/main/install.sh | bash"
 echo "  TikTok Int: curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-TikTok-Intelligence-Bundle/main/install.sh | bash"
 echo ""
-echo "Pool Router: localhost:9998 -> sinatorpool1/2/3 (auto-failover)"
+echo "Pool Router: sinatorpool-router.delqhi.com -> 10 Proxys (auto-failover)"
 echo "Secrets:     ~/.hermes/scripts/infisical-get.py <KEY>"
 echo "SerpAPI:     ~/.hermes/scripts/serpapi-pool.py rotate"
 echo ""

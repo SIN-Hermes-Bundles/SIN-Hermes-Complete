@@ -64,8 +64,8 @@ Details: [SIN-Hermes-WhatsApp-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-
 
 ## Pool-Router
 
-Der Provider-Bundle installiert einen lokalen Router auf `localhost:9998`
-mit Auto-Failover zwischen `sinatorpool1/2/3`.
+Der Provider-Bundle installiert einen Router auf `sinatorpool-router.delqhi.com`
+mit Auto-Failover über 10 Proxys.
 
 - **429 Rate Limit** -> sofort naechster Pool
 - **412 Suspended** -> sofort naechster Pool
@@ -97,7 +97,7 @@ Für vollautonomen Betrieb (Fernsteuerung, Handy, Cron, Surveys) **abschalten:**
 
 ## Was der Installer macht
 
-1. **Pool Router** — `pool-router.py` auf `localhost:9998` mit Auto-Failover
+1. **Pool Router** — `pool-router.py` auf `sinatorpool-router.delqhi.com` mit Auto-Failover
 2. **Fireworks Config** — `~/.hermes/config.yaml` mit Router-URL
 3. **412 Retry Patch** — `error_classifier.py`: 412 + "suspended" -> `billing` + retryable
 4. **UA-Spoof Patch** — `_ua_patch.py`: Chrome Mac User-Agent + `max_retries=0` (Router uebernimmt Retry)

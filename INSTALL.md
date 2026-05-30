@@ -41,8 +41,8 @@ cd SIN-Hermes-Complete
 ## Verification
 
 ```bash
-# Check Pool Router
-curl -s http://localhost:9998/health | python3 -m json.tool
+# Check Pool Router (via public endpoint)
+curl -s https://sinatorpool-router.delqhi.com/inference/v1/models | python3 -m json.tool | head -20
 
 # Check Hermes config
 grep "tool_search" ~/.hermes/config.yaml
